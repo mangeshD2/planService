@@ -1,0 +1,27 @@
+# Conversion to YAML from Properties formar report
+# Warnings:
+# - The yaml file had comments which are lost in the refactoring!
+spring:
+  application:
+    name: 01_PLANS_API
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: ashokit
+    password: ashokit
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+server:
+  port: 8083
+  
+plan-api:
+  messages:
+    planSaved: Plan saved Successfully
+    planNotSaved: Plan Not Saved
+    planDeleted: Plan Deleted Successfully
+    planNotDeleted: Plan not Deleted
+    planUpdated: Plan Updated Successfully
+    planNotUpdated: Plan not Updated
+    planStatusChanged: Plan Status Changed
+    planStatusNotChanged: Plan status not Changed
